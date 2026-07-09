@@ -2,6 +2,8 @@ import { useState, useRef, useEffect, Component, type ReactNode } from 'react';
 import confetti from 'canvas-confetti';
 import jsPDF from 'jspdf';
 
+console.log('✓ Bibliotecas importadas com sucesso');
+
 // Error Boundary para capturar erros e evitar página em branco
 class ErrorBoundary extends Component<
   { children: ReactNode },
@@ -80,6 +82,8 @@ const NUMBERS_PER_COL = 15;
 const TOTAL_NUMBERS = 75;
 
 function BingoApp() {
+  console.log('🎨 BingoApp iniciando...');
+  
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [loginEmail, setLoginEmail] = useState('');
   const [loginPass, setLoginPass] = useState('');
